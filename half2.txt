@@ -1,0 +1,464 @@
+Batch no_ 2023-13-11---416 to 430-AB2 shot_object_12.tiff
+Batch no _ 2023-13-16, ID no 568 to 580 --BC Shot_object_01.tiff
+Batch no_ 2023-13-11---416 to 430-BC1 shot_object_07.tiff
+Batch no _ 2023-13-16, ID no 568 to 580 --B Shot_object_05.tiff
+Batch no_ 2023-13-11---401 to 415-AB1 shot_object_06.tiff
+Batch no _ 2023-13-16, ID no 568 to 580 --AB Shot_object_02.tiff
+Batch no _ 2023-13-16, ID no 568 to 580 --B Shot_object_13.tiff
+Batch no_ 2023-13-11---401 to 415-AB1 shot_object_10.tiff
+Batch no_ 2023-13-11---416 to 430-AB2 shot_object_04.tiff
+Batch no _ 2023-13-16, ID no 568 to 580 --B3 Shot_object_03.tiff
+Batch no_ 2023-13-11---416 to 430-BC1 shot_object_11.tiff
+Batch no_ 2023-13-11---401 to 415-BC1 shot_object_09.tiff
+Batch no_ 2023-13-11---416 to 430-B shot_object_10.tiff
+Batch no_ 2023-13-11---416 to 430-B1 shot_object_15.tiff
+Batch no_ 2023-13-11---416 to 430-AB1 shot_object_08.tiff
+Batch no_ 2023-13-11---401 to 415-A1 shot_object_15.tiff
+Batch no_ 2023-13-11---416 to 430-AB3 shot_object_12.tiff
+Batch no_ 2023-13-11---416 to 430-B1 shot_object_03.tiff
+Batch no_ 2023-13-11---401 to 415-A1 shot_object_03.tiff
+Batch no_ 2023-13-11---416 to 430-AB3 shot_object_04.tiff
+Batch no _ 2023-13-16, ID no 568 to 580 --A Shot_object_09.tiff
+Batch no_ 2023-13-11---416 to 430-B shot_object_06.tiff
+Batch no_ 2023-13-11---416 to 430-B2 shot_object_03.tiff
+Batch no_ 2023-13-11---416 to 430-BC3 shot_object_11.tiff
+Batch no_ 2023-13-11---416 to 430-A shot_object_06.tiff
+Batch no_ 2023-13-11---401 to 415-BC shot_object_14.tiff
+Batch no _ 2023-13-16, ID no 568 to 580 --B Shot_object_09.tiff
+Batch no_ 2023-13-11---401 to 415-BC shot_object_02.tiff
+Batch no_ 2023-13-11---416 to 430-A shot_object_10.tiff
+Batch no_ 2023-13-11---401 to 415-AB shot_object_01.tiff
+Batch no_ 2023-13-11---416 to 430-AB2 shot_object_08.tiff
+Batch no_ 2023-13-11---416 to 430-BC3 shot_object_07.tiff
+Batch no_ 2023-13-11---416 to 430-B2 shot_object_15.tiff
+Batch no _ 2023-13-16, ID no 568 to 580 --A Shot_object_13.tiff
+Batch no_ 2023-13-11---416 to 430-AB shot_object_14.tiff
+Batch no_ 2023-13-11---401 to 415-BC1 shot_object_05.tiff
+Batch  no_ 2023-13-16---551 to 567-BC3 shot_object_02.tiff
+Batch no_ 2023-13-11---416 to 430-B3 shot_object_03.tiff
+Batch no_ 2023-13-11---416 to 430-BC2 shot_object_11.tiff
+Batch no_ 2023-13-11---416 to 430-AB1 shot_object_04.tiff
+Batch no_ 2023-13-11---416 to 430-AB3 shot_object_08.tiff
+Batch  no_ 2023-13-16---551 to 567-BC3 shot_object_14.tiff
+Batch no_ 2023-13-11---416 to 430-BC2 shot_object_07.tiff
+Batch no_ 2023-13-11---416 to 430-B3 shot_object_15.tiff
+Batch no_ 2023-13-11---416 to 430-BC Shot_object_01.tiff
+Batch no_ 2023-13-11---416 to 430-AB1 shot_object_12.tiff
+Batch no _ 2023-13-16, ID no 568 to 580 --AB1 Shot_object_03.tiff
+Batch no _ 2023-13-16, ID no 568 to 580 --A Shot_object_05.tiff
+Batch no_ 2023-13-11---401 to 415-BC1 shot_object_13.tiff
+Batch no_ 2023-13-11---416 to 430-AB shot_object_02.tiff
+Batch no _ 2023-13-16, ID no 568 to 580 --A Shot_object_04.tiff
+Batch no_ 2023-13-11---401 to 415-BC1 shot_object_12.tiff
+Batch no_ 2023-13-11---416 to 430-AB shot_object_03.tiff
+Batch no _ 2023-13-16, ID no 568 to 580 --AB1 Shot_object_02.tiff
+Batch no_ 2023-13-11---416 to 430-AB1 shot_object_13.tiff
+Batch no_ 2023-13-11---416 to 430-AB3 shot_object_09.tiff
+Batch  no_ 2023-13-16---551 to 567-BC3 shot_object_15.tiff
+Batch no_ 2023-13-11---416 to 430-BC2 shot_object_06.tiff
+Batch no_ 2023-13-11---416 to 430-B3 shot_object_14.tiff
+Batch no_ 2023-13-11---416 to 430-AB1 shot_object_05.tiff
+Batch  no_ 2023-13-16---551 to 567-BC3 shot_object_03.tiff
+Batch no_ 2023-13-11---416 to 430-B3 shot_object_02.tiff
+Batch no_ 2023-13-11---416 to 430-BC2 shot_object_10.tiff
+Batch no _ 2023-13-16, ID no 568 to 580 --A Shot_object_12.tiff
+Batch no _ 2023-13-16, ID no 568 to 580 --A1 Shot_object_01.tiff
+Batch no_ 2023-13-11---416 to 430-AB shot_object_15.tiff
+Batch no_ 2023-13-11---401 to 415-BC1 shot_object_04.tiff
+Batch no_ 2023-13-11---416 to 430-A2 shot_object_01.tiff
+Batch no_ 2023-13-11---416 to 430-AB2 shot_object_09.tiff
+Batch no_ 2023-13-11---416 to 430-BC3 shot_object_06.tiff
+Batch no_ 2023-13-11---416 to 430-B2 shot_object_14.tiff
+Batch no_ 2023-13-11---401 to 415-BC shot_object_03.tiff
+Batch no_ 2023-13-11---416 to 430-A shot_object_11.tiff
+Batch no_ 2023-13-11---416 to 430-A3 shot_object_01.tiff
+Batch no _ 2023-13-16, ID no 568 to 580 --B Shot_object_08.tiff
+Batch no_ 2023-13-11---416 to 430-A shot_object_07.tiff
+Batch no_ 2023-13-11---401 to 415-BC shot_object_15.tiff
+Batch no _ 2023-13-16, ID no 568 to 580 --BC3 Shot_object_01.tiff
+Batch no_ 2023-13-11---416 to 430-B2 shot_object_02.tiff
+Batch no_ 2023-13-11---416 to 430-BC3 shot_object_10.tiff
+Batch no_ 2023-13-11---401 to 415-B shot_object_01.tiff
+Batch no_ 2023-13-11---416 to 430-B shot_object_07.tiff
+Batch no _ 2023-13-16, ID no 568 to 580 --A Shot_object_08.tiff
+Batch no_ 2023-13-11---416 to 430-AB3 shot_object_05.tiff
+Batch no_ 2023-13-11---416 to 430-B1 shot_object_02.tiff
+Batch no_ 2023-13-11---401 to 415-A1 shot_object_02.tiff
+Batch no_ 2023-13-11---416 to 430-AB3 shot_object_13.tiff
+Batch no_ 2023-13-11---416 to 430-B1 shot_object_14.tiff
+Batch no_ 2023-13-11---416 to 430-AB1 shot_object_09.tiff
+Batch no_ 2023-13-11---401 to 415-A1 shot_object_14.tiff
+Batch no_ 2023-13-11---416 to 430-B shot_object_11.tiff
+Batch no_ 2023-13-11---401 to 415-BC1 shot_object_08.tiff
+Batch no_ 2023-13-11---416 to 430-BC1 shot_object_10.tiff
+Batch no_ 2023-13-11---416 to 430-AB2 shot_object_05.tiff
+Batch no _ 2023-13-16, ID no 568 to 580 --B3 Shot_object_02.tiff
+Batch no_ 2023-13-11---401 to 415-B1 shot_object_01.tiff
+Batch no_ 2023-13-11---401 to 415-AB1 shot_object_11.tiff
+Batch no_ 2023-13-11---416 to 430-A1 shot_object_01.tiff
+Batch no _ 2023-13-16, ID no 568 to 580 --B Shot_object_12.tiff
+Batch no_ 2023-13-11---401 to 415-AB1 shot_object_07.tiff
+Batch no _ 2023-13-16, ID no 568 to 580 --AB Shot_object_03.tiff
+Batch no _ 2023-13-16, ID no 568 to 580 --B Shot_object_04.tiff
+Batch no_ 2023-13-11---416 to 430-BC1 shot_object_06.tiff
+Batch no_ 2023-13-11---416 to 430-AB2 shot_object_13.tiff
+Batch no_ 2023-13-11---401 to 415-AB shot_object_11.tiff
+Batch no_ 2023-13-11---416 to 430-B2 shot_object_05.tiff
+Batch no _ 2023-13-16, ID no 568 to 580 --BC3 Shot_object_06.tiff
+Batch no_ 2023-13-11---401 to 415-BC shot_object_12.tiff
+Batch no _ 2023-13-16, ID no 568 to 580 --AB Shot_object_08.tiff
+Batch no_ 2023-13-11---416 to 430-A3 shot_object_06.tiff
+Batch no_ 2023-13-11---401 to 415-BC shot_object_04.tiff
+Batch no _ 2023-13-16, ID no 568 to 580 --BC3 Shot_object_10.tiff
+Batch no_ 2023-13-11---416 to 430-A3 shot_object_10.tiff
+Batch no_ 2023-13-11---401 to 415-AB shot_object_07.tiff
+Batch no_ 2023-13-11---416 to 430-B2 shot_object_13.tiff
+Batch no_ 2023-13-11---416 to 430-BC3 shot_object_01.tiff
+Batch no _ 2023-13-16, ID no 568 to 580 --B3 Shot_object_09.tiff
+Batch no _ 2023-13-16, ID no 568 to 580 --AB1 Shot_object_13.tiff
+Batch no_ 2023-13-11---416 to 430-A2 shot_object_06.tiff
+Batch no_ 2023-13-11---401 to 415-BC1 shot_object_03.tiff
+Batch no _ 2023-13-16, ID no 568 to 580 --A1 Shot_object_06.tiff
+Batch no_ 2023-13-11---416 to 430-AB shot_object_12.tiff
+Batch  no_ 2023-13-16---551 to 567-BC3 shot_object_04.tiff
+Batch no_ 2023-13-11---416 to 430-B3 shot_object_05.tiff
+Batch no_ 2023-13-11---416 to 430-BC Shot_object_11.tiff
+Batch no_ 2023-13-11---416 to 430-AB1 shot_object_02.tiff
+Batch  no_ 2023-13-16---551 to 567-BC3 shot_object_12.tiff
+Batch no_ 2023-13-11---416 to 430-B3 shot_object_13.tiff
+Batch no_ 2023-13-11---416 to 430-BC2 shot_object_01.tiff
+Batch no_ 2023-13-11---416 to 430-B1 shot_object_09.tiff
+Batch no_ 2023-13-11---416 to 430-BC Shot_object_07.tiff
+Batch no_ 2023-13-11---416 to 430-AB1 shot_object_14.tiff
+Batch no_ 2023-13-11---401 to 415-A1 shot_object_09.tiff
+Batch no_ 2023-13-11---416 to 430-A2 shot_object_10.tiff
+Batch no _ 2023-13-16, ID no 568 to 580 --AB1 Shot_object_05.tiff
+Batch no _ 2023-13-16, ID no 568 to 580 --A Shot_object_03.tiff
+Batch no_ 2023-13-11---416 to 430-AB shot_object_04.tiff
+Batch no _ 2023-13-16, ID no 568 to 580 --A1 Shot_object_10.tiff
+Batch no_ 2023-13-11---401 to 415-BC1 shot_object_15.tiff
+Batch no_ 2023-13-11---416 to 430-AB2 shot_object_14.tiff
+Batch no_ 2023-13-11---416 to 430-B2 shot_object_09.tiff
+Batch no _ 2023-13-16, ID no 568 to 580 --B3 Shot_object_13.tiff
+Batch no _ 2023-13-16, ID no 568 to 580 --BC Shot_object_07.tiff
+Batch no_ 2023-13-11---416 to 430-BC1 shot_object_01.tiff
+Batch no _ 2023-13-16, ID no 568 to 580 --B Shot_object_03.tiff
+Batch no_ 2023-13-11---401 to 415-B1 shot_object_10.tiff
+Batch no_ 2023-13-11---416 to 430-A1 shot_object_10.tiff
+Batch no _ 2023-13-16, ID no 568 to 580 --AB Shot_object_04.tiff
+Batch no_ 2023-13-11---401 to 415-BC shot_object_08.tiff
+Batch no_ 2023-13-11---401 to 415-B1 shot_object_06.tiff
+Batch no _ 2023-13-16, ID no 568 to 580 --AB Shot_object_12.tiff
+Batch no_ 2023-13-11---416 to 430-A1 shot_object_06.tiff
+Batch no_ 2023-13-11---416 to 430-AB2 shot_object_02.tiff
+Batch no _ 2023-13-16, ID no 568 to 580 --B3 Shot_object_05.tiff
+Batch no _ 2023-13-16, ID no 568 to 580 --BC Shot_object_11.tiff
+Batch no_ 2023-13-11---401 to 415-B shot_object_10.tiff
+Batch no_ 2023-13-11---416 to 430-B1 shot_object_13.tiff
+Batch no_ 2023-13-11---401 to 415-A1 shot_object_13.tiff
+Batch  no_ 2023-13-16---551 to 567-BC3 shot_object_08.tiff
+Batch no_ 2023-13-11---416 to 430-AB3 shot_object_14.tiff
+Batch no_ 2023-13-11---416 to 430-B3 shot_object_09.tiff
+Batch no_ 2023-13-11---416 to 430-B1 shot_object_05.tiff
+Batch no_ 2023-13-11---401 to 415-A1 shot_object_05.tiff
+Batch no_ 2023-13-11---416 to 430-AB3 shot_object_02.tiff
+Batch no_ 2023-13-11---416 to 430-AB shot_object_08.tiff
+Batch no _ 2023-13-16, ID no 568 to 580 --AB1 Shot_object_09.tiff
+Batch no_ 2023-13-11---401 to 415-B shot_object_06.tiff
+Batch no _ 2023-13-16, ID no 568 to 580 --AB1 Shot_object_08.tiff
+Batch no_ 2023-13-11---401 to 415-B shot_object_07.tiff
+Batch no_ 2023-13-11---416 to 430-B shot_object_01.tiff
+Batch no_ 2023-13-11---416 to 430-AB shot_object_09.tiff
+Batch no_ 2023-13-11---416 to 430-AB3 shot_object_03.tiff
+Batch no_ 2023-13-11---416 to 430-B1 shot_object_04.tiff
+Batch no_ 2023-13-11---401 to 415-A1 shot_object_04.tiff
+Batch  no_ 2023-13-16---551 to 567-BC3 shot_object_09.tiff
+Batch no_ 2023-13-11---416 to 430-AB3 shot_object_15.tiff
+Batch no_ 2023-13-11---416 to 430-B3 shot_object_08.tiff
+Batch no_ 2023-13-11---416 to 430-B1 shot_object_12.tiff
+Batch no_ 2023-13-11---401 to 415-A1 shot_object_12.tiff
+Batch no_ 2023-13-11---401 to 415-B shot_object_11.tiff
+Batch no _ 2023-13-16, ID no 568 to 580 --BC Shot_object_10.tiff
+Batch no_ 2023-13-11---416 to 430-AB2 shot_object_03.tiff
+Batch no _ 2023-13-16, ID no 568 to 580 --B3 Shot_object_04.tiff
+Batch no_ 2023-13-11---401 to 415-BC shot_object_09.tiff
+Batch no_ 2023-13-11---401 to 415-B1 shot_object_07.tiff
+Batch no _ 2023-13-16, ID no 568 to 580 --AB Shot_object_13.tiff
+Batch no_ 2023-13-11---416 to 430-A1 shot_object_07.tiff
+Batch no_ 2023-13-11---401 to 415-AB1 shot_object_01.tiff
+Batch no_ 2023-13-11---401 to 415-B1 shot_object_11.tiff
+Batch no_ 2023-13-11---416 to 430-A1 shot_object_11.tiff
+Batch no _ 2023-13-16, ID no 568 to 580 --AB Shot_object_05.tiff
+Batch no _ 2023-13-16, ID no 568 to 580 --B Shot_object_02.tiff
+Batch no _ 2023-13-16, ID no 568 to 580 --BC Shot_object_06.tiff
+Batch no_ 2023-13-11---416 to 430-AB2 shot_object_15.tiff
+Batch no_ 2023-13-11---416 to 430-B2 shot_object_08.tiff
+Batch no _ 2023-13-16, ID no 568 to 580 --B3 Shot_object_12.tiff
+Batch no _ 2023-13-16, ID no 568 to 580 --A Shot_object_02.tiff
+Batch no_ 2023-13-11---416 to 430-AB shot_object_05.tiff
+Batch no _ 2023-13-16, ID no 568 to 580 --A1 Shot_object_11.tiff
+Batch no_ 2023-13-11---401 to 415-BC1 shot_object_14.tiff
+Batch no_ 2023-13-11---416 to 430-A2 shot_object_11.tiff
+Batch no _ 2023-13-16, ID no 568 to 580 --AB1 Shot_object_04.tiff
+Batch no_ 2023-13-11---416 to 430-B1 shot_object_08.tiff
+Batch no_ 2023-13-11---416 to 430-BC Shot_object_06.tiff
+Batch no_ 2023-13-11---416 to 430-AB1 shot_object_15.tiff
+Batch no_ 2023-13-11---401 to 415-A1 shot_object_08.tiff
+Batch  no_ 2023-13-16---551 to 567-BC3 shot_object_13.tiff
+Batch no_ 2023-13-11---416 to 430-B3 shot_object_12.tiff
+Batch no_ 2023-13-11---416 to 430-BC Shot_object_10.tiff
+Batch no_ 2023-13-11---416 to 430-AB1 shot_object_03.tiff
+Batch  no_ 2023-13-16---551 to 567-BC3 shot_object_05.tiff
+Batch no_ 2023-13-11---416 to 430-B3 shot_object_04.tiff
+Batch no_ 2023-13-11---401 to 415-BC1 shot_object_02.tiff
+Batch no _ 2023-13-16, ID no 568 to 580 --A1 Shot_object_07.tiff
+Batch no_ 2023-13-11---416 to 430-AB shot_object_13.tiff
+Batch no _ 2023-13-16, ID no 568 to 580 --AB1 Shot_object_12.tiff
+Batch no_ 2023-13-11---416 to 430-A2 shot_object_07.tiff
+Batch no_ 2023-13-11---416 to 430-B2 shot_object_12.tiff
+Batch no _ 2023-13-16, ID no 568 to 580 --B3 Shot_object_08.tiff
+Batch no_ 2023-13-11---401 to 415-AB shot_object_06.tiff
+Batch no_ 2023-13-11---416 to 430-A3 shot_object_11.tiff
+Batch no_ 2023-13-11---401 to 415-BC shot_object_05.tiff
+Batch no _ 2023-13-16, ID no 568 to 580 --BC3 Shot_object_11.tiff
+Batch no_ 2023-13-11---416 to 430-A3 shot_object_07.tiff
+Batch no _ 2023-13-16, ID no 568 to 580 --BC3 Shot_object_07.tiff
+Batch no_ 2023-13-11---401 to 415-BC shot_object_13.tiff
+Batch no_ 2023-13-11---416 to 430-A shot_object_01.tiff
+Batch no _ 2023-13-16, ID no 568 to 580 --AB Shot_object_09.tiff
+Batch no_ 2023-13-11---416 to 430-B2 shot_object_04.tiff
+Batch no_ 2023-13-11---401 to 415-AB shot_object_10.tiff
+Batch no_ 2023-13-11---416 to 430-AB shot_object_06.tiff
+Batch no _ 2023-13-16, ID no 568 to 580 --A1 Shot_object_12.tiff
+Batch no _ 2023-13-16, ID no 568 to 580 --A Shot_object_01.tiff
+Batch no _ 2023-13-16, ID no 568 to 580 --AB1 Shot_object_07.tiff
+Batch no_ 2023-13-11---401 to 415-B shot_object_08.tiff
+Batch no_ 2023-13-11---416 to 430-A2 shot_object_12.tiff
+Batch no_ 2023-13-11---416 to 430-BC Shot_object_05.tiff
+Batch no_ 2023-13-11---416 to 430-B3 shot_object_11.tiff
+Batch no_ 2023-13-11---416 to 430-BC2 shot_object_03.tiff
+Batch  no_ 2023-13-16---551 to 567-BC3 shot_object_10.tiff
+Batch no_ 2023-13-11---416 to 430-BC Shot_object_13.tiff
+Batch no_ 2023-13-11---416 to 430-BC2 shot_object_15.tiff
+Batch no_ 2023-13-11---416 to 430-B3 shot_object_07.tiff
+Batch  no_ 2023-13-16---551 to 567-BC3 shot_object_06.tiff
+Batch no _ 2023-13-16, ID no 568 to 580 --A1 Shot_object_04.tiff
+Batch no_ 2023-13-11---416 to 430-AB shot_object_10.tiff
+Batch no_ 2023-13-11---401 to 415-BC1 shot_object_01.tiff
+Batch no_ 2023-13-11---416 to 430-A2 shot_object_04.tiff
+Batch no _ 2023-13-16, ID no 568 to 580 --AB1 Shot_object_11.tiff
+Batch no_ 2023-13-11---416 to 430-B2 shot_object_11.tiff
+Batch no_ 2023-13-11---416 to 430-BC3 shot_object_03.tiff
+Batch no_ 2023-13-11---401 to 415-AB shot_object_05.tiff
+Batch no_ 2023-13-11---416 to 430-A3 shot_object_12.tiff
+Batch no_ 2023-13-11---416 to 430-A1 shot_object_08.tiff
+Batch no_ 2023-13-11---401 to 415-BC shot_object_06.tiff
+Batch no _ 2023-13-16, ID no 568 to 580 --BC3 Shot_object_12.tiff
+Batch no_ 2023-13-11---416 to 430-A shot_object_14.tiff
+Batch no_ 2023-13-11---401 to 415-B1 shot_object_08.tiff
+Batch no_ 2023-13-11---416 to 430-A3 shot_object_04.tiff
+Batch no_ 2023-13-11---416 to 430-A shot_object_02.tiff
+Batch no _ 2023-13-16, ID no 568 to 580 --BC3 Shot_object_04.tiff
+Batch no_ 2023-13-11---401 to 415-BC shot_object_10.tiff
+Batch no_ 2023-13-11---416 to 430-BC3 shot_object_15.tiff
+Batch no_ 2023-13-11---416 to 430-B2 shot_object_07.tiff
+Batch no_ 2023-13-11---401 to 415-AB shot_object_13.tiff
+Batch no _ 2023-13-16, ID no 568 to 580 --BC Shot_object_09.tiff
+Batch no_ 2023-13-11---416 to 430-B shot_object_02.tiff
+Batch no_ 2023-13-11---401 to 415-B shot_object_04.tiff
+Batch no_ 2023-13-11---401 to 415-A1 shot_object_07.tiff
+Batch no_ 2023-13-11---416 to 430-B1 shot_object_07.tiff
+Batch no_ 2023-13-11---416 to 430-BC Shot_object_09.tiff
+Batch no_ 2023-13-11---401 to 415-A1 shot_object_11.tiff
+Batch no_ 2023-13-11---416 to 430-B1 shot_object_11.tiff
+Batch no_ 2023-13-11---416 to 430-B shot_object_14.tiff
+Batch no_ 2023-13-11---401 to 415-B shot_object_12.tiff
+Batch no_ 2023-13-11---416 to 430-A2 shot_object_08.tiff
+Batch no _ 2023-13-16, ID no 568 to 580 --A1 Shot_object_08.tiff
+Batch no_ 2023-13-11---401 to 415-AB shot_object_09.tiff
+Batch no_ 2023-13-11---416 to 430-BC1 shot_object_15.tiff
+Batch no _ 2023-13-16, ID no 568 to 580 --BC Shot_object_13.tiff
+Batch no _ 2023-13-16, ID no 568 to 580 --B3 Shot_object_07.tiff
+Batch no _ 2023-13-16, ID no 568 to 580 --AB Shot_object_10.tiff
+Batch no_ 2023-13-11---416 to 430-A1 shot_object_04.tiff
+Batch no_ 2023-13-11---401 to 415-B1 shot_object_04.tiff
+Batch no_ 2023-13-11---401 to 415-AB1 shot_object_14.tiff
+Batch no_ 2023-13-11---416 to 430-A1 shot_object_12.tiff
+Batch no _ 2023-13-16, ID no 568 to 580 --AB Shot_object_06.tiff
+Batch no _ 2023-13-16, ID no 568 to 580 --BC3 Shot_object_08.tiff
+Batch no_ 2023-13-11---401 to 415-AB1 shot_object_02.tiff
+Batch no_ 2023-13-11---401 to 415-B1 shot_object_12.tiff
+Batch no _ 2023-13-16, ID no 568 to 580 --B Shot_object_01.tiff
+Batch no_ 2023-13-11---416 to 430-A3 shot_object_08.tiff
+Batch no _ 2023-13-16, ID no 568 to 580 --BC Shot_object_05.tiff
+Batch no_ 2023-13-11---416 to 430-BC1 shot_object_03.tiff
+Batch no _ 2023-13-16, ID no 568 to 580 --B3 Shot_object_11.tiff
+Batch no _ 2023-13-16, ID no 568 to 580 --B3 Shot_object_10.tiff
+Batch no _ 2023-13-16, ID no 568 to 580 --BC Shot_object_04.tiff
+Batch no_ 2023-13-11---416 to 430-BC1 shot_object_02.tiff
+Batch no_ 2023-13-11---416 to 430-A3 shot_object_09.tiff
+Batch no_ 2023-13-11---416 to 430-A1 shot_object_13.tiff
+Batch no _ 2023-13-16, ID no 568 to 580 --AB Shot_object_07.tiff
+Batch no _ 2023-13-16, ID no 568 to 580 --BC3 Shot_object_09.tiff
+Batch no_ 2023-13-11---401 to 415-AB1 shot_object_03.tiff
+Batch no_ 2023-13-11---401 to 415-B1 shot_object_13.tiff
+Batch no _ 2023-13-16, ID no 568 to 580 --AB Shot_object_11.tiff
+Batch no_ 2023-13-11---416 to 430-A1 shot_object_05.tiff
+Batch no_ 2023-13-11---401 to 415-B1 shot_object_05.tiff
+Batch no_ 2023-13-11---401 to 415-AB1 shot_object_15.tiff
+Batch no _ 2023-13-16, ID no 568 to 580 --B3 Shot_object_06.tiff
+Batch no_ 2023-13-11---416 to 430-AB2 shot_object_01.tiff
+Batch no_ 2023-13-11---401 to 415-AB shot_object_08.tiff
+Batch no_ 2023-13-11---416 to 430-BC1 shot_object_14.tiff
+Batch no _ 2023-13-16, ID no 568 to 580 --BC Shot_object_12.tiff
+Batch no _ 2023-13-16, ID no 568 to 580 --A1 Shot_object_09.tiff
+Batch no_ 2023-13-11---416 to 430-B shot_object_15.tiff
+Batch no_ 2023-13-11---401 to 415-B shot_object_13.tiff
+Batch no_ 2023-13-11---416 to 430-A2 shot_object_09.tiff
+Batch no_ 2023-13-11---401 to 415-A1 shot_object_10.tiff
+Batch no_ 2023-13-11---416 to 430-B1 shot_object_10.tiff
+Batch no_ 2023-13-11---401 to 415-A1 shot_object_06.tiff
+Batch no_ 2023-13-11---416 to 430-B1 shot_object_06.tiff
+Batch no_ 2023-13-11---416 to 430-BC Shot_object_08.tiff
+Batch no_ 2023-13-11---416 to 430-AB3 shot_object_01.tiff
+Batch no_ 2023-13-11---416 to 430-B shot_object_03.tiff
+Batch no_ 2023-13-11---401 to 415-B shot_object_05.tiff
+Batch no_ 2023-13-11---401 to 415-AB shot_object_12.tiff
+Batch no _ 2023-13-16, ID no 568 to 580 --BC Shot_object_08.tiff
+Batch no_ 2023-13-11---416 to 430-BC3 shot_object_14.tiff
+Batch no_ 2023-13-11---416 to 430-B2 shot_object_06.tiff
+Batch no_ 2023-13-11---416 to 430-A shot_object_03.tiff
+Batch no _ 2023-13-16, ID no 568 to 580 --BC3 Shot_object_05.tiff
+Batch no_ 2023-13-11---401 to 415-BC shot_object_11.tiff
+Batch no_ 2023-13-11---416 to 430-A3 shot_object_05.tiff
+Batch no_ 2023-13-11---416 to 430-A1 shot_object_09.tiff
+Batch no_ 2023-13-11---401 to 415-BC shot_object_07.tiff
+Batch no _ 2023-13-16, ID no 568 to 580 --BC3 Shot_object_13.tiff
+Batch no_ 2023-13-11---416 to 430-A shot_object_15.tiff
+Batch no_ 2023-13-11---401 to 415-B1 shot_object_09.tiff
+Batch no_ 2023-13-11---416 to 430-A3 shot_object_13.tiff
+Batch no_ 2023-13-11---401 to 415-AB shot_object_04.tiff
+Batch no_ 2023-13-11---416 to 430-B2 shot_object_10.tiff
+Batch no_ 2023-13-11---416 to 430-BC3 shot_object_02.tiff
+Batch no_ 2023-13-11---416 to 430-A2 shot_object_05.tiff
+Batch no _ 2023-13-16, ID no 568 to 580 --AB1 Shot_object_10.tiff
+Batch no _ 2023-13-16, ID no 568 to 580 --A1 Shot_object_05.tiff
+Batch no_ 2023-13-11---416 to 430-AB shot_object_11.tiff
+Batch no_ 2023-13-11---416 to 430-BC2 shot_object_14.tiff
+Batch no_ 2023-13-11---416 to 430-B3 shot_object_06.tiff
+Batch  no_ 2023-13-16---551 to 567-BC3 shot_object_07.tiff
+Batch no_ 2023-13-11---416 to 430-AB1 shot_object_01.tiff
+Batch no_ 2023-13-11---416 to 430-BC Shot_object_12.tiff
+Batch no_ 2023-13-11---416 to 430-B3 shot_object_10.tiff
+Batch no_ 2023-13-11---416 to 430-BC2 shot_object_02.tiff
+Batch  no_ 2023-13-16---551 to 567-BC3 shot_object_11.tiff
+Batch no_ 2023-13-11---416 to 430-BC Shot_object_04.tiff
+Batch no _ 2023-13-16, ID no 568 to 580 --AB1 Shot_object_06.tiff
+Batch no_ 2023-13-11---401 to 415-B shot_object_09.tiff
+Batch no_ 2023-13-11---416 to 430-A2 shot_object_13.tiff
+Batch no_ 2023-13-11---416 to 430-AB shot_object_07.tiff
+Batch no _ 2023-13-16, ID no 568 to 580 --A1 Shot_object_13.tiff
+Batch no_ 2023-13-11---416 to 430-B shot_object_04.tiff
+Batch no_ 2023-13-11---401 to 415-B shot_object_02.tiff
+Batch no_ 2023-13-11---416 to 430-BC2 shot_object_09.tiff
+Batch no_ 2023-13-11---416 to 430-AB3 shot_object_06.tiff
+Batch no_ 2023-13-11---401 to 415-A1 shot_object_01.tiff
+Batch no_ 2023-13-11---416 to 430-B1 shot_object_01.tiff
+Batch no_ 2023-13-11---416 to 430-AB3 shot_object_10.tiff
+Batch no_ 2023-13-11---416 to 430-B shot_object_12.tiff
+Batch no_ 2023-13-11---401 to 415-B shot_object_14.tiff
+Batch no_ 2023-13-11---416 to 430-BC1 shot_object_13.tiff
+Batch no _ 2023-13-16, ID no 568 to 580 --B3 Shot_object_01.tiff
+Batch no_ 2023-13-11---416 to 430-BC3 shot_object_09.tiff
+Batch no_ 2023-13-11---416 to 430-AB2 shot_object_06.tiff
+Batch no_ 2023-13-11---416 to 430-A1 shot_object_02.tiff
+Batch no_ 2023-13-11---401 to 415-B1 shot_object_02.tiff
+Batch no_ 2023-13-11---401 to 415-AB1 shot_object_12.tiff
+Batch no _ 2023-13-16, ID no 568 to 580 --B Shot_object_11.tiff
+Batch no_ 2023-13-11---416 to 430-A1 shot_object_14.tiff
+Batch no_ 2023-13-11---401 to 415-AB1 shot_object_04.tiff
+Batch no_ 2023-13-11---416 to 430-A shot_object_08.tiff
+Batch no_ 2023-13-11---401 to 415-B1 shot_object_14.tiff
+Batch no _ 2023-13-16, ID no 568 to 580 --B Shot_object_07.tiff
+Batch no _ 2023-13-16, ID no 568 to 580 --BC Shot_object_03.tiff
+Batch no_ 2023-13-11---416 to 430-BC1 shot_object_05.tiff
+Batch no_ 2023-13-11---416 to 430-AB2 shot_object_10.tiff
+Batch no_ 2023-13-11---401 to 415-BC1 shot_object_11.tiff
+Batch no _ 2023-13-16, ID no 568 to 580 --A Shot_object_07.tiff
+Batch no_ 2023-13-11---416 to 430-B shot_object_08.tiff
+Batch no_ 2023-13-11---416 to 430-A2 shot_object_14.tiff
+Batch no _ 2023-13-16, ID no 568 to 580 --AB1 Shot_object_01.tiff
+Batch no_ 2023-13-11---416 to 430-AB1 shot_object_10.tiff
+Batch no_ 2023-13-11---416 to 430-BC Shot_object_03.tiff
+Batch no_ 2023-13-11---416 to 430-BC2 shot_object_05.tiff
+Batch no_ 2023-13-11---416 to 430-AB1 shot_object_06.tiff
+Batch no_ 2023-13-11---416 to 430-BC Shot_object_15.tiff
+Batch no_ 2023-13-11---416 to 430-B3 shot_object_01.tiff
+Batch no_ 2023-13-11---416 to 430-BC2 shot_object_13.tiff
+Batch no_ 2023-13-11---401 to 415-BC1 shot_object_07.tiff
+Batch no _ 2023-13-16, ID no 568 to 580 --A1 Shot_object_02.tiff
+Batch no _ 2023-13-16, ID no 568 to 580 --A Shot_object_11.tiff
+Batch no_ 2023-13-11---416 to 430-A2 shot_object_02.tiff
+Batch no_ 2023-13-11---416 to 430-BC3 shot_object_05.tiff
+Batch no_ 2023-13-11---401 to 415-AB shot_object_03.tiff
+Batch no_ 2023-13-11---416 to 430-A3 shot_object_14.tiff
+Batch no_ 2023-13-11---416 to 430-A shot_object_12.tiff
+Batch no_ 2023-13-11---416 to 430-A3 shot_object_02.tiff
+Batch no _ 2023-13-16, ID no 568 to 580 --BC3 Shot_object_02.tiff
+Batch no_ 2023-13-11---416 to 430-A shot_object_04.tiff
+Batch no_ 2023-13-11---401 to 415-AB1 shot_object_08.tiff
+Batch no_ 2023-13-11---416 to 430-B2 shot_object_01.tiff
+Batch no_ 2023-13-11---416 to 430-BC3 shot_object_13.tiff
+Batch no_ 2023-13-11---401 to 415-AB shot_object_15.tiff
+Batch no_ 2023-13-11---416 to 430-BC1 shot_object_09.tiff
+Batch no_ 2023-13-11---401 to 415-AB shot_object_14.tiff
+Batch no_ 2023-13-11---416 to 430-BC1 shot_object_08.tiff
+Batch no_ 2023-13-11---416 to 430-BC3 shot_object_12.tiff
+Batch no _ 2023-13-16, ID no 568 to 580 --BC3 Shot_object_03.tiff
+Batch no_ 2023-13-11---401 to 415-AB1 shot_object_09.tiff
+Batch no_ 2023-13-11---416 to 430-A shot_object_05.tiff
+Batch no_ 2023-13-11---416 to 430-A3 shot_object_03.tiff
+Batch no_ 2023-13-11---416 to 430-A shot_object_13.tiff
+Batch no_ 2023-13-11---401 to 415-BC shot_object_01.tiff
+Batch no_ 2023-13-11---416 to 430-A3 shot_object_15.tiff
+Batch no_ 2023-13-11---401 to 415-AB shot_object_02.tiff
+Batch no_ 2023-13-11---416 to 430-BC3 shot_object_04.tiff
+Batch no_ 2023-13-11---416 to 430-A2 shot_object_03.tiff
+Batch no_ 2023-13-11---401 to 415-BC1 shot_object_06.tiff
+Batch no _ 2023-13-16, ID no 568 to 580 --A1 Shot_object_03.tiff
+Batch no _ 2023-13-16, ID no 568 to 580 --A Shot_object_10.tiff
+Batch no_ 2023-13-11---416 to 430-BC2 shot_object_12.tiff
+Batch  no_ 2023-13-16---551 to 567-BC3 shot_object_01.tiff
+Batch no_ 2023-13-11---416 to 430-AB1 shot_object_07.tiff
+Batch no_ 2023-13-11---416 to 430-BC Shot_object_14.tiff
+Batch no_ 2023-13-11---416 to 430-BC2 shot_object_04.tiff
+Batch no_ 2023-13-11---416 to 430-AB1 shot_object_11.tiff
+Batch no_ 2023-13-11---416 to 430-BC Shot_object_02.tiff
+Batch no_ 2023-13-11---416 to 430-B shot_object_09.tiff
+Batch no_ 2023-13-11---416 to 430-A2 shot_object_15.tiff
+Batch no_ 2023-13-11---416 to 430-AB shot_object_01.tiff
+Batch no_ 2023-13-11---401 to 415-BC1 shot_object_10.tiff
+Batch no _ 2023-13-16, ID no 568 to 580 --A Shot_object_06.tiff
+Batch no_ 2023-13-11---416 to 430-AB2 shot_object_11.tiff
+Batch no _ 2023-13-16, ID no 568 to 580 --BC Shot_object_02.tiff
+Batch no_ 2023-13-11---416 to 430-BC1 shot_object_04.tiff
+Batch no _ 2023-13-16, ID no 568 to 580 --B Shot_object_06.tiff
+Batch no_ 2023-13-11---416 to 430-A1 shot_object_15.tiff
+Batch no _ 2023-13-16, ID no 568 to 580 --AB Shot_object_01.tiff
+Batch no_ 2023-13-11---416 to 430-A shot_object_09.tiff
+Batch no_ 2023-13-11---401 to 415-AB1 shot_object_05.tiff
+Batch no_ 2023-13-11---401 to 415-B1 shot_object_15.tiff
+Batch no _ 2023-13-16, ID no 568 to 580 --B Shot_object_10.tiff
+Batch no_ 2023-13-11---416 to 430-A1 shot_object_03.tiff
+Batch no_ 2023-13-11---401 to 415-B1 shot_object_03.tiff
+Batch no_ 2023-13-11---401 to 415-AB1 shot_object_13.tiff
+Batch no_ 2023-13-11---416 to 430-BC3 shot_object_08.tiff
+Batch no_ 2023-13-11---416 to 430-AB2 shot_object_07.tiff
+Batch no_ 2023-13-11---416 to 430-BC1 shot_object_12.tiff
+Batch no_ 2023-13-11---416 to 430-B shot_object_13.tiff
+Batch no_ 2023-13-11---401 to 415-B shot_object_15.tiff
+Batch no_ 2023-13-11---416 to 430-AB3 shot_object_11.tiff
+Batch no_ 2023-13-11---416 to 430-BC2 shot_object_08.tiff
+Batch no_ 2023-13-11---416 to 430-AB3 shot_object_07.tiff
+Batch no_ 2023-13-11---416 to 430-B shot_object_05.tiff
+Batch no_ 2023-13-11---401 to 415-B shot_object_03.tiff
