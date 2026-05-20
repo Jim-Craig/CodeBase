@@ -175,10 +175,10 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
 
     #take command line arguments for hyperparameters and paths
-    parser.add_argument('--train_image_dir', type=str, default='/home/godwinkhalko/ISRO/Data/train_images', help='Path to training images')
-    parser.add_argument('--train_mask_dir', type=str, default='/home/godwinkhalko/ISRO/Data/train_masks', help='Path to training masks')
-    parser.add_argument('--val_image_dir', type=str, default='/home/godwinkhalko/ISRO/Data/val_images', help='Path to validation images')
-    parser.add_argument('--val_mask_dir', type=str, default='/home/godwinkhalko/ISRO/Data/val_masks', help='Path to validation masks')
+    parser.add_argument('--train_image_dir', type=str, default='/home/godwinkhalko/ISRO/VOID_DATA/train_images', help='Path to training images')
+    parser.add_argument('--train_mask_dir', type=str, default='/home/godwinkhalko/ISRO/VOID_DATA/train_annotations', help='Path to training masks')
+    parser.add_argument('--val_image_dir', type=str, default='/home/godwinkhalko/ISRO/VOID_DATA/val_images', help='Path to validation images')
+    parser.add_argument('--val_mask_dir', type=str, default='/home/godwinkhalko/ISRO/VOID_DATA/val_annotations', help='Path to validation masks')
     parser.add_argument('--batch_size', type=int, default=32, help='Batch size for training')
     parser.add_argument('--epochs', type=int, default=5, help='Number of epochs to train')
     parser.add_argument('--learning_rate', type=float, default=1e-4, help='Learning rate for optimizer')
