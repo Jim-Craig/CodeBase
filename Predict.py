@@ -59,7 +59,7 @@ def component_cropping(input_folder, filename, output_path):
         area = stats[i, cv2.CC_STAT_AREA]
 
         # Filter small noise
-        if area > 2000:   # adjust threshold if needed
+        if area > 1500:   # adjust threshold if needed
             boxes.append((x, y, w, h))
     # -----------------------
     # Sort into grid structure
@@ -95,7 +95,7 @@ def folder_component_cropping(input_folder, output_path):
 
 
 def init_model(device = "cuda:1"):
-    checkpoint = "/home/godwinkhalko/ISRO/UNetPP/isro_unetplusplus_resnet34.pth"
+    checkpoint = "/home/godwinkhalko/ISRO/CodeBase/UNetPP/isro_unetplusplus_resnet34.pth"
 
     device = torch.device(device if torch.cuda.is_available() else 'cpu')
     model = smp.UnetPlusPlus(
@@ -292,9 +292,9 @@ def run_roi_inference(image_path, roi_model, device):
     # Extract from result[0] (first image in batch)
     boxes = roi_results[0].boxes
     scale = 256/640
-    boxes = (boxes * scale)
-    SGP = boxes[0].xyxy.cpu().numpy()   
-    LGP = boxes[1].conf.cpu().numpy()  
+    # boxes = (boxes * scale)
+    SGP = boxes[0].xyxy.cpu().numpy()*scale
+    LGP = boxes[1].conf.cpu().numpy()*scale
 
     return SGP, LGP
             
@@ -306,12 +306,7 @@ def predict_and_describe(model, roi_model, device, input_folder, output_path,thr
         if not filename.lower().endswith((".png", ".jpg", ".jpeg", ".tiff", ".tif")):
             continue
         image_path = os.path.join(input_folder, filename)
-        image = Image.open(image_path)
-        arr = np.array(image, dtype=np.float32)
-
-        # Stretch actual range (24320–64000) to full 0–255
-        arr = (arr - arr.min()) / (arr.max() - arr.min()) * 255
-        image = Image.fromarray(arr.astype(np.uint8), mode='L')
+        image = Image.open(image_path).convert('L')
         image = resize(image)
         image_tensor = TF.to_tensor(image)
         image_tensor = TF.normalize(image_tensor, mean=[0.485], std=[0.229])
@@ -352,11 +347,12 @@ if __name__ == "__main__":
     os.makedirs(prediction_output_path, exist_ok=True)
     model, device = init_model()
     roi_model, device = init_ROI_model(device)
-    try:
-        pred_mask = predict_and_describe(model, roi_model, device, component_output_folder, prediction_output_path)
-    except Exception as e:
-        print(f"Error during prediction and description: {e}")
-    finally:
-        del model
-        del roi_model
-        del device
+    # try:
+    #     pred_mask = predict_and_describe(model, roi_model, device, component_output_folder, prediction_output_path)
+    # except Exception as e:
+    #     print(f"Error during prediction and description: {e}")
+    # finally:
+    #     del model
+    #     del roi_model
+    #     del device
+    pred_mask = predict_and_describe(model, roi_model, device, component_output_folder, prediction_output_path)

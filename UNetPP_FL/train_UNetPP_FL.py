@@ -22,7 +22,7 @@ class ISRODataset(Dataset):
         # Sort both lists to guarantee alignment between image and mask
         self.image_paths = sorted([
             os.path.join(image_dir, f)
-            for f in os.listdir(image_dir) if f.endswith('.tiff')
+            for f in os.listdir(image_dir) if f.endswith('.png')
         ])
         self.mask_paths = sorted([
             os.path.join(mask_dir, f)
@@ -122,6 +122,29 @@ def save_checkpoint(model, optimizer, epoch, loss, save_path):
     }
     torch.save(checkpoint, save_path)
 
+def compute_Segmentation_Metrics(outputs, masks, total_pixel_acc, total_iou, total_dice):
+    # Convert outputs to binary predictions
+    preds = torch.sigmoid(outputs) > 0.5  # For binary segmentation
+    # For multi-class, use: preds = torch.argmax(outputs, dim=1)
+
+    preds = preds.squeeze(1).long()   # (B, H, W)
+    masks = masks.squeeze(1).long()   # (B, H, W)
+
+    # --- Pixel Accuracy ---
+    correct = (preds == masks).sum().item()
+    total = masks.numel()
+    total_pixel_acc += correct / total
+    # --- IoU (Jaccard Index) ---
+    intersection = (preds & masks).sum(dim=(1, 2)).float()     # (B,)
+    union        = (preds | masks).sum(dim=(1, 2)).float()      # (B,)
+    iou = (intersection / (union + 1e-6)).mean().item()         # mean over batch
+    total_iou += iou
+
+    # --- Dice Coefficient (F1) ---
+    dice = (2 * intersection / (preds.sum(dim=(1,2)) + masks.sum(dim=(1,2)) + 1e-6)).mean().item()
+    total_dice += dice
+    return total_pixel_acc / len(outputs), total_iou / len(outputs), total_dice / len(outputs)
+    
 #Training loop
 def train_model(model, train_loader, val_loader, optimizer, checkpoint_path, num_epochs=10, device='cuda:0'):
     best_val_loss = float('inf')
@@ -139,12 +162,15 @@ def train_model(model, train_loader, val_loader, optimizer, checkpoint_path, num
             loss.backward()
             optimizer.step()
             train_loss += loss.item()
-            print(f"Batch Loss for batch {idx}: {loss.item():.4f}", end='\r')
+            print(f"Batch Loss for batch {idx} / {len(train_loader)}: {loss.item():.4f}", end='\r')
         avg_train_loss = train_loss / len(train_loader)
         
         # Validation
         model.eval()
         val_loss = 0
+        total_iou = 0
+        total_dice = 0
+        total_pixel_acc = 0
         print(f"Epoch {epoch+1}/{num_epochs} - Validating...")
         with torch.no_grad():
             for images, masks in val_loader:
@@ -152,11 +178,14 @@ def train_model(model, train_loader, val_loader, optimizer, checkpoint_path, num
                 outputs = model(images)
                 loss = loss_fn(outputs, masks)
                 val_loss += loss.item()
-
+                total_pixel_acc, total_iou, total_dice = compute_Segmentation_Metrics(outputs, masks, total_pixel_acc, total_iou, total_dice)
         avg_val_loss = val_loss / len(val_loader)
+        avg_val_pixel_acc = total_pixel_acc / len(val_loader)
+        avg_val_iou = total_iou / len(val_loader)
+        avg_val_dice = total_dice / len(val_loader)
         # Print training and validation loss for the epoch
         print(f"Epoch [{epoch+1}/{num_epochs}] Train Loss: {avg_train_loss:.4f}, Val Loss: {avg_val_loss:.4f}")
-        
+        print(f"Epoch [{epoch+1}/{num_epochs}] Pixel Accuracy: {avg_val_pixel_acc:.4f}, IoU: {avg_val_iou:.4f}, Dice: {avg_val_dice:.4f}")
         # Save checkpoint after each epoch if validation loss improved, 
         # stop the training if validation loss does not improve for 5 consecutive epochs
         if epoch == 0 or avg_val_loss < best_val_loss:
@@ -170,7 +199,6 @@ def train_model(model, train_loader, val_loader, optimizer, checkpoint_path, num
                 print("Validation loss has not improved for 5 consecutive epochs. Stopping training.")
                 break
     return best_model
-
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
 
@@ -180,12 +208,12 @@ if __name__ == "__main__":
     parser.add_argument('--val_image_dir', type=str, default='/home/godwinkhalko/ISRO/VOID_DATA/val_images', help='Path to validation images')
     parser.add_argument('--val_mask_dir', type=str, default='/home/godwinkhalko/ISRO/VOID_DATA/val_annotations', help='Path to validation masks')
     parser.add_argument('--batch_size', type=int, default=32, help='Batch size for training')
-    parser.add_argument('--epochs', type=int, default=5, help='Number of epochs to train')
+    parser.add_argument('--epochs', type=int, default=100, help='Number of epochs to train')
     parser.add_argument('--learning_rate', type=float, default=1e-4, help='Learning rate for optimizer')
-    parser.add_argument('--save_path', type=str, default='/home/godwinkhalko/ISRO/UNetPP_FL/isro_unetplusplusFL_resnet34.pth', help='Path to save the trained model')
-    parser.add_argument('--checkpoint_path', type=str, default='/home/godwinkhalko/ISRO/UNetPP_FL/checkpoint.pth', help='Path to save the checkpoint')
+    parser.add_argument('--save_path', type=str, default='/home/godwinkhalko/ISRO/CodeBase/UNetPP_FL/isro_unetplusplusFL_resnet34.pth', help='Path to save the trained model')
+    parser.add_argument('--checkpoint_path', type=str, default='/home/godwinkhalko/ISRO/CodeBase/UNetPP_FL/checkpoint.pth', help='Path to save the checkpoint')
     parser.add_argument('--resume_checkpoint', action='store_true', help='Whether to resume training from checkpoint')
-    parser.add_argument('--device', type=str, default='cuda:0', help='Device to use for training (e.g., "cuda:0" or "cpu")')
+    parser.add_argument('--device', type=str, default='cuda:1', help='Device to use for training (e.g., "cuda:0" or "cpu")')
     args = parser.parse_args()
 
     
