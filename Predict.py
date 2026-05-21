@@ -120,51 +120,6 @@ def init_ROI_model(device):
     model.eval()  # Set to evaluation mode
     return model, device
 
-# def get_defect_description(index, image, pred_mask, output_path, SGP, LGP):
-#     binary_mask = np.array(pred_mask) > 0
-
-#     # Label connected components
-#     labeled, num = ndi.label(binary_mask)
-#     sizes = ndi.sum(binary_mask, labeled, range(1, num + 1))
-
-#     # Filter out noise below threshold
-#     min_pixels = 5
-
-#     # Find bounding boxes for all labeled objects
-#     objects = ndi.find_objects(labeled)
-
-#     # Count and print only valid (non-noise) objects
-#     valid_objects = [(i, obj) for i, obj in enumerate(objects) if sizes[i] > min_pixels]
-#     #Write onto a .txt file
-#     with open(f"{output_path}/defect_description_{index}.txt", "w") as f:
-#         f.write(f"Number of voids in component {index}: {len(valid_objects)}\n")
-#         for rank, (i, obj) in enumerate(valid_objects, start=1):
-#             # Convert slices to readable pixel coordinates
-#             row_start = obj[0].start
-#             row_end   = obj[0].stop
-#             col_start = obj[1].start
-#             col_end   = obj[1].stop
-#             width     = col_end - col_start
-#             height    = row_end - row_start
-
-#             f.write(f"\void {rank} in component {index}:")
-#             f.write(f"  Bounding box -> Row: {row_start} to {row_end}, Col: {col_start} to {col_end}")
-#             f.write(f"  Width: {width}px, Height: {height}px")
-#             f.write(f"  Area (white pixels): {int(sizes[i])} pixels")
-#     #save the description in a text file
-#     f.close()
-#     #plot the original image and the predicted mask overlaid on top of original image
-#     plt.figure(figsize=(10, 5))
-#     plt.subplot(1, 2, 1)
-#     plt.title("Original Image")
-#     plt.imshow(image, cmap='gray')
-#     plt.subplot(1, 2, 2)
-#     plt.title("Predicted Mask Overlay")
-#     plt.imshow(image, cmap='gray')
-#     plt.imshow(pred_mask, cmap='jet', alpha=0.5)
-#     #Write the plot to the defect description file
-#     plt.savefig(f"{output_path}/defect_visualization_component_{index}.png")
-#     plt.close()
 
 def get_defect_description(index, image, pred_mask, output_path, SGP, LGP):
     binary_mask = np.array(pred_mask) > 0
@@ -181,7 +136,7 @@ def get_defect_description(index, image, pred_mask, output_path, SGP, LGP):
         """Compute pixel overlap between a defect bounding box and an ROI box."""
         row_start, row_end = obj[0].start, obj[0].stop
         col_start, col_end = obj[1].start, obj[1].stop
-        bx1, by1, bx2, by2 = box.astype(int)
+        bx1, by1, bx2, by2 = box.astype(int).squeeze()  # Convert to integers
 
         # Intersection
         ix1 = max(col_start, bx1)
@@ -293,8 +248,13 @@ def run_roi_inference(image_path, roi_model, device):
     boxes = roi_results[0].boxes
     scale = 256/640
     # boxes = (boxes * scale)
-    SGP = boxes[0].xyxy.cpu().numpy()*scale
-    LGP = boxes[1].conf.cpu().numpy()*scale
+    box = boxes[0]
+    if box.cls.cpu().numpy() == 0:  # SGP
+        SGP = boxes[0].xyxy.cpu().numpy()*scale
+        LGP = boxes[1].xyxy.cpu().numpy()*scale
+    else:  # LGP
+        LGP = boxes[0].xyxy.cpu().numpy()*scale
+        SGP = boxes[1].xyxy.cpu().numpy()*scale
 
     return SGP, LGP
             
@@ -347,12 +307,11 @@ if __name__ == "__main__":
     os.makedirs(prediction_output_path, exist_ok=True)
     model, device = init_model()
     roi_model, device = init_ROI_model(device)
-    # try:
-    #     pred_mask = predict_and_describe(model, roi_model, device, component_output_folder, prediction_output_path)
-    # except Exception as e:
-    #     print(f"Error during prediction and description: {e}")
-    # finally:
-    #     del model
-    #     del roi_model
-    #     del device
-    pred_mask = predict_and_describe(model, roi_model, device, component_output_folder, prediction_output_path)
+    try:
+        pred_mask = predict_and_describe(model, roi_model, device, component_output_folder, prediction_output_path)
+    except Exception as e:
+        print(f"Error during prediction and description: {e}")
+    finally:
+        del model
+        del roi_model
+        del device
