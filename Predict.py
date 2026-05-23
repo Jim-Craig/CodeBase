@@ -26,8 +26,10 @@ def get_defect_description(index, image, pred_mask, output_path, SGP, LGP):
 
     min_pixels = 5
     objects = ndi.find_objects(labeled)
+    # Filter out small objects and keep track of their indices
     valid_objects = [(i, obj) for i, obj in enumerate(objects) if sizes[i] > min_pixels]
 
+    # Function to compute overlap area between a void object and an ROI box
     def compute_overlap_area(obj, box):
         """Compute pixel overlap between a defect bounding box and an ROI box."""
         row_start, row_end = obj[0].start, obj[0].stop
@@ -44,6 +46,7 @@ def get_defect_description(index, image, pred_mask, output_path, SGP, LGP):
             return 0  # No overlap
         return (ix2 - ix1) * (iy2 - iy1)
 
+    # Function to assign a defect object to SGP, LGP, or None based on maximum overlap
     def assign_object_to_region(obj, SGP, LGP):
         """Assign defect to SGP or LGP based on max overlap."""
         best_region = None
@@ -67,6 +70,7 @@ def get_defect_description(index, image, pred_mask, output_path, SGP, LGP):
     sgp_objects, lgp_objects, unassigned_objects = [], [], []
 
     for i, obj in valid_objects:
+        # Determine which region (SGP, LGP, or None) the object belongs to based on maximum overlap
         region = assign_object_to_region(obj, SGP, LGP)
         if region == 'SGP':
             sgp_objects.append((i, obj))
@@ -76,6 +80,7 @@ def get_defect_description(index, image, pred_mask, output_path, SGP, LGP):
             unassigned_objects.append((i, obj))
 
     def write_object_details(f, rank, i, obj, sizes):
+        # Helper function to write details of each defect object to the file
         row_start, row_end = obj[0].start, obj[0].stop
         col_start, col_end = obj[1].start, obj[1].stop
         width  = col_end - col_start
@@ -85,23 +90,24 @@ def get_defect_description(index, image, pred_mask, output_path, SGP, LGP):
         f.write(f"\n    Width: {width}px, Height: {height}px")
         f.write(f"\n    Area (white pixels): {int(sizes[i])} pixels")
 
+    # Write the defect description to a text file for the component
     with open(f"{output_path}/defect_description_{index}.txt", "w") as f:
         f.write(f"Number of voids in component {index}: {len(valid_objects)}\n")
         f.write(f"  - Inside SGP regions: {len(sgp_objects)}\n")
         f.write(f"  - Inside LGP regions: {len(lgp_objects)}\n")
         f.write(f"  - Outside all ROI regions: {len(unassigned_objects)}\n")
 
-        # SGP objects
+        # Write the details of each void object in SGP region
         f.write(f"\n--- Voids in SGP Region ({len(sgp_objects)} total) ---")
         for rank, (i, obj) in enumerate(sgp_objects, start=1):
             write_object_details(f, rank, i, obj, sizes)
 
-        # LGP objects
+        # Write the details of each void object in LGP region
         f.write(f"\n\n--- Voids in LGP Region ({len(lgp_objects)} total) ---")
         for rank, (i, obj) in enumerate(lgp_objects, start=1):
             write_object_details(f, rank, i, obj, sizes)
 
-        # Unassigned
+        # Write the details of each void object outside all ROI regions
         if unassigned_objects:
             f.write(f"\n\n--- Voids Outside ROI Regions ({len(unassigned_objects)} total) ---")
             for rank, (i, obj) in enumerate(unassigned_objects, start=1):
@@ -142,9 +148,13 @@ def run_roi_inference(image_path, roi_model, device):
 
     # Extract from result[0] (first image in batch)
     boxes = roi_results[0].boxes
+    #Scale is used because the original image is resized to 640x640 for YOLO inference, 
+    # but the actual component images are 256x256.
     scale = 256/640
-    # boxes = (boxes * scale)
     box = boxes[0]
+    # The class index (box.cls) indicates whether the box corresponds to SGP (0) or LGP (1). 
+    # Depending on the class, we assign the boxes to SGP and LGP variables accordingly.
+
     if box.cls.cpu().numpy() == 0:  # SGP
         SGP = boxes[0].xyxy.cpu().numpy()*scale
         LGP = boxes[1].xyxy.cpu().numpy()*scale
@@ -155,12 +165,12 @@ def run_roi_inference(image_path, roi_model, device):
     return SGP, LGP
             
 def predict_and_describe(model, roi_model, device, input_folder, output_path,threshold=0.15):
-    pred_masks = []
     resize = torchvision.transforms.Resize((256, 256))
 
     for i, filename in enumerate(os.listdir(input_folder)):
         if not filename.lower().endswith((".png", ".jpg", ".jpeg", ".tiff", ".tif")):
             continue
+        # For each component image, we load it, preprocess it
         image_path = os.path.join(input_folder, filename)
         image = Image.open(image_path).convert('L')
         image = resize(image)
@@ -169,20 +179,21 @@ def predict_and_describe(model, roi_model, device, input_folder, output_path,thr
         image_tensor = image_tensor.unsqueeze(0).to(device)
 
         with torch.no_grad():
+            #Run the ROI inference to get the SGP and LGP regions.
             SGP, LGP = run_roi_inference(image_path, roi_model, device)
             if len(SGP) == 0 or len(LGP) == 0 :
                 print(f"No ROI detected in component {i}. Skipping defect description.")
                 continue
-
+            #Run the segmentation model to get the predicted defect mask, 
+            #apply thresholding and dilation, and then generate the defect description and visualization for the component.
             output = model(image_tensor)
             pred_mask = torch.sigmoid(output).cpu()  # keep as tensor
             pred_mask = (pred_mask > threshold).float()
             kernel = np.ones((3,3), np.uint8)
             pred_mask = cv2.dilate(pred_mask.numpy().squeeze(), kernel)
             pred_mask = torch.from_numpy(pred_mask).unsqueeze(0).unsqueeze(0).float()  # back to tensor with shape [1, 1, H, W]
+            # Generate defect description and visualization for the component
             get_defect_description(i, image, pred_mask.squeeze().cpu().numpy(), output_path, SGP, LGP)
-            pred_masks.append(pred_mask)
-    return pred_masks
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="ISRO Defect Detection and Description")
@@ -193,7 +204,15 @@ if __name__ == "__main__":
     parser.add_argument('--component_extraction', type=bool, default=False, help='Flag to check if component extraction is needed before prediction')
     args = parser.parse_args()
 
+#   Folder where the cropped component images will be saved (if component extraction is enabled)
+#   Else the code uses th images in this fodler for prediction directly
     component_output_folder = args.component_output_folder
+    os.makedirs(component_output_folder, exist_ok=True)
+
+    #If the image is a Component Cluster image, then we need to extract the individual components before prediction.
+    # The component_cropping function will save the cropped component images in the component_output_folder 
+    # and return the sorted bounding boxes of the components for further processing. 
+    # If component extraction is not needed, it will directly use the images in the component_output_folder for prediction.
     if args.component_extraction:
         input_folder = args.input_folder
         filename = args.filename
@@ -201,9 +220,14 @@ if __name__ == "__main__":
 
     prediction_output_path = args.prediction_output_folder
     os.makedirs(prediction_output_path, exist_ok=True)
+
+    # Initialize the segmentation model and the ROI detection model
     model, device = init_model()
     roi_model, device = init_ROI_model(device)
     try:
+        #Main code that runs the prediction and description pipeline. It processes each component image,
+        # runs the ROI detection to get SGP and LGP regions, predicts the defect mask, and then generates the 
+        # defect description and visualization for each component.
         pred_mask = predict_and_describe(model, roi_model, device, component_output_folder, prediction_output_path)
     except Exception as e:
         print(f"Error during prediction and description: {e}")
