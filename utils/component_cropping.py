@@ -4,8 +4,11 @@ import numpy as np
 # Component cropping for a single image
 
 
-
-def component_cropping(input_folder, filename, output_path):
+# I wouldn't want to change the component cropping code since it is working perfectly and is not a bottleneck in the pipeline.
+# However if you feel like the components aren't being cropped correctly, you can adjust the threshold in the code below.
+# A larger threshold will result in fewer, larger components (potentially merging nearby objects), 
+# while a smaller threshold will result in more, smaller components (potentially splitting single objects into multiple parts).
+def component_cropping(input_folder, filename, output_path, threshold=1500):
     if filename.lower().endswith((".png", ".jpg", ".jpeg", ".tiff", ".tif")):
         
         image_path = os.path.join(input_folder, filename)
@@ -48,7 +51,7 @@ def component_cropping(input_folder, filename, output_path):
         area = stats[i, cv2.CC_STAT_AREA]
 
         # Filter small noise
-        if area > 1500:   # adjust threshold if needed
+        if area > threshold:   # adjust threshold if needed
             boxes.append((x, y, w, h))
     # -----------------------
     # Sort into grid structure
@@ -78,7 +81,7 @@ def component_cropping(input_folder, filename, output_path):
     return sorted_boxes
 
 #Component cropping for all images in a folder
-def folder_component_cropping(input_folder, output_path):
+def folder_component_cropping(input_folder, output_path, threshold=1500):
     for filename in os.listdir(input_folder):
-        component_cropping(input_folder, filename, output_path)
+        component_cropping(input_folder, filename, output_path, threshold)
 
