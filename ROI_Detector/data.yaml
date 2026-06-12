@@ -1,0 +1,10 @@
+# dataset.yaml
+path: /home/godwinkhalko/ISRO/Data   
+
+train: images/train
+val: images/val
+
+nc: 2  # number of classes — change this!
+names:
+  0: SGP
+  1: LGP
