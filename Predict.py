@@ -125,7 +125,19 @@ def get_defect_description(index, image, pred_mask, output_path, SGP, LGP):
     plt.savefig(f"{output_path}/defect_visualization_component_{index}.png")
     plt.close()
 
+def load_image(image_path):
+    image = Image.open(image_path)
+    arr = np.array(image, dtype=np.float32)
 
+    # Stretch to 0-255
+    arr = (arr - arr.min()) / (arr.max() - arr.min()) * 255
+    arr_uint8 = arr.astype(np.uint8)
+    arr_uint8 = cv2.resize(arr_uint8, (256, 256))
+
+    # Convert to BGR for OpenCV drawing, then back to RGB for matplotlib
+    img_bgr = cv2.cvtColor(arr_uint8, cv2.COLOR_GRAY2BGR)
+
+    return img_bgr, arr_uint8
 def run_roi_inference(image_path, roi_model, device):
     # Load and normalize to 0-255 uint8
     image = Image.open(image_path)
@@ -177,7 +189,7 @@ def predict_and_describe(model, roi_model, device, input_folder, output_path,thr
         image_tensor = TF.to_tensor(image)
         image_tensor = TF.normalize(image_tensor, mean=[0.485], std=[0.229])
         image_tensor = image_tensor.unsqueeze(0).to(device)
-
+        img_bgr, arr_uint8 = load_image(image_path)
         with torch.no_grad():
             #Run the ROI inference to get the SGP and LGP regions.
             SGP, LGP = run_roi_inference(image_path, roi_model, device)
@@ -193,14 +205,14 @@ def predict_and_describe(model, roi_model, device, input_folder, output_path,thr
             pred_mask = cv2.dilate(pred_mask.numpy().squeeze(), kernel)
             pred_mask = torch.from_numpy(pred_mask).unsqueeze(0).unsqueeze(0).float()  # back to tensor with shape [1, 1, H, W]
             # Generate defect description and visualization for the component
-            get_defect_description(i, image, pred_mask.squeeze().cpu().numpy(), output_path, SGP, LGP)
+            get_defect_description(i, img_bgr, pred_mask.squeeze().cpu().numpy(), output_path, SGP, LGP)
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="ISRO Defect Detection and Description")
     parser.add_argument('--input_folder', type=str, default="/home/godwinkhalko/ISRO/ISRO_DATASET", help='Path to the folder containing the images to be processed')
     parser.add_argument('--component_output_folder', type=str, default='/home/godwinkhalko/ISRO/output', help='Path to save the cropped component images')
     parser.add_argument('--prediction_output_folder', type=str, default='/home/godwinkhalko/ISRO/output_prediction', help='Path to save the prediction outputs')
-    parser.add_argument('--filename', type=str, default="Batch  no; 2023-13-11---401 to 415-A shot processed.tiff", help='Filename of the image to be processed for component extraction')
+    parser.add_argument('--filename', type=str, default="Batch  no; 2023-13-16---551 to 567-AB shot Processed.tiff", help='Filename of the image to be processed for component extraction')
     parser.add_argument('--component_extraction', type=bool, default=False, help='Flag to check if component extraction is needed before prediction')
     args = parser.parse_args()
 

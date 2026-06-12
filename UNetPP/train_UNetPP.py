@@ -22,7 +22,7 @@ class ISRODataset(Dataset):
         # Sort both lists to guarantee alignment between image and mask
         self.image_paths = sorted([
             os.path.join(image_dir, f)
-            for f in os.listdir(image_dir) if f.endswith('.png')
+            for f in os.listdir(image_dir) if f.endswith('.tiff')
         ])
         self.mask_paths = sorted([
             os.path.join(mask_dir, f)
@@ -204,14 +204,14 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
 
     #take command line arguments for hyperparameters and paths
-    parser.add_argument('--train_image_dir', type=str, default='/home/godwinkhalko/ISRO/VOID_DATA/train_images', help='Path to training images')
-    parser.add_argument('--train_mask_dir', type=str, default='/home/godwinkhalko/ISRO/VOID_DATA/train_annotations', help='Path to training masks')
-    parser.add_argument('--val_image_dir', type=str, default='/home/godwinkhalko/ISRO/VOID_DATA/val_images', help='Path to validation images')
-    parser.add_argument('--val_mask_dir', type=str, default='/home/godwinkhalko/ISRO/VOID_DATA/val_annotations', help='Path to validation masks')
+    parser.add_argument('--train_image_dir', type=str, default='/home/godwinkhalko/ISRO/DATA/train_images', help='Path to training images')
+    parser.add_argument('--train_mask_dir', type=str, default='/home/godwinkhalko/ISRO/DATA/train_annotations', help='Path to training masks')
+    parser.add_argument('--val_image_dir', type=str, default='/home/godwinkhalko/ISRO/DATA/val_images', help='Path to validation images')
+    parser.add_argument('--val_mask_dir', type=str, default='/home/godwinkhalko/ISRO/DATA/val_annotations', help='Path to validation masks')
     parser.add_argument('--batch_size', type=int, default=32, help='Batch size for training')
     parser.add_argument('--epochs', type=int, default=100, help='Number of epochs to train')
     parser.add_argument('--learning_rate', type=float, default=1e-4, help='Learning rate for optimizer')
-    parser.add_argument('--save_path', type=str, default='/home/godwinkhalko/ISRO/CodeBase/UNetPP/isro_unetplusplus_resnet34.pth', help='Path to save the trained model')
+    parser.add_argument('--save_path', type=str, default='/home/godwinkhalko/ISRO/CodeBase/UNetPP/isro_unetplusplus_resnet34_DATA.pth', help='Path to save the trained model')
     parser.add_argument('--checkpoint_path', type=str, default='/home/godwinkhalko/ISRO/CodeBase/UNetPP/checkpoint.pth', help='Path to save the checkpoint')
     parser.add_argument('--resume_checkpoint', action='store_true', help='Whether to resume training from checkpoint')
     parser.add_argument('--device', type=str, default='cuda:0', help='Device to use for training (e.g., "cuda:0" or "cpu")')

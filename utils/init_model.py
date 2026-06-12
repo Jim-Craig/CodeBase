@@ -10,7 +10,7 @@ from ultralytics import YOLO
 # since the defect description code is designed for that input size.
 #  If you change the model architecture, make sure to adjust the input and output channels accordingly.
 def init_model(device = "cuda:1"):
-    checkpoint = "/home/godwinkhalko/ISRO/CodeBase/UNetPP/isro_unetplusplus_resnet34.pth"
+    checkpoint = "/home/godwinkhalko/ISRO/CodeBase/UNetPP/isro_unetplusplus_resnet34_DATA.pth"
 
     device = torch.device(device if torch.cuda.is_available() else 'cpu')
     model = smp.UnetPlusPlus(

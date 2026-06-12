@@ -83,9 +83,9 @@ def component_cropping(input_folder, filename, output_path):
     for idx, (x, y, w, h) in enumerate(sorted_boxes):
         crop = image[y:y+h, x:x+w]
         #save as tiff format in 16 bit format
-        if crop.dtype != np.uint16:
-            crop = crop.astype(np.uint16) * 256   # scale 8-bit → 16-bit
-        cv2.imwrite(os.path.join(output_path, f"{os.path.splitext(filename)[0]}_object_{idx+1:02}.png"), crop)
+        # if crop.dtype != np.uint16:
+        #     crop = crop.astype(np.uint16) * 256   # scale 8-bit → 16-bit
+        cv2.imwrite(os.path.join(output_path, f"{os.path.splitext(filename)[0]}_object_{idx+1:02}.jpeg"), crop)
     print(f"Saved {len(sorted_boxes)} cropped objects from {filename}.")
     return len(sorted_boxes) not in [13, 15]  # return True if count is unexpected
 
@@ -105,7 +105,7 @@ if __name__ == "__main__":
 
     #take command line arguments for hyperparameters and paths
     parser.add_argument('--input_folder', type=str, default="/home/godwinkhalko/ISRO/ISRO_DATASET", help='Path to the folder containing the images to be processed')
-    parser.add_argument('--output_folder', type=str, default='/home/godwinkhalko/ISRO/ISRO_COMPONENTS', help='Path to save the cropped component images')
+    parser.add_argument('--output_folder', type=str, default='/home/godwinkhalko/ISRO/ISRO_COMPONENTS_1', help='Path to save the cropped component images')
     args = parser.parse_args()
 
     input_folder = args.input_folder
